@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--Grey-200: hsl(0, 0%, 85%);
+--ff-alata: "Alata", sans-serif;
+--ff-josefin: "Josefin Sans", sans-serif;
+}
+ul{
+    list-style: none;
+
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: 15px;
+    /* border: red solid 10px; */
+    /* we used the overflow-x: hidden because we dont want the x-axis to be able to scroll  */
+}
+
+.container{
+    padding: 0 100px;
+    border: red 2px solid;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+background-image: url(assets/desktop/Image20251008202552.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 36rem;
+padding-bottom: 2rem;
+
+}
+/* css framework: an easier, or quicker way to write css */
+/* we use the class of container before we finish the html. whenever we have a html-code that needs the things in the .container we add the class */
+/* when we use backround-size:cover the image strethes to the other end of the screen so that it COVERS the screen*/
