@@ -15,7 +15,6 @@
 }
 ul{
     list-style: none;
-
 }
 body{
     min-height: 100vh;
@@ -24,10 +23,9 @@ body{
     /* border: red solid 10px; */
     /* we used the overflow-x: hidden because we dont want the x-axis to be able to scroll  */
 }
-
 .container{
     padding: 0 100px;
-    border: red 2px solid;
+    /* border: red 2px solid; */
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -37,8 +35,48 @@ background-repeat: no-repeat;
 background-size: cover;
 min-height: 36rem;
 padding-bottom: 2rem;
-
 }
 /* css framework: an easier, or quicker way to write css */
 /* we use the class of container before we finish the html. whenever we have a html-code that needs the things in the .container we add the class */
 /* when we use backround-size:cover the image strethes to the other end of the screen so that it COVERS the screen*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+/* flex-wrap: wrap makes sure that everything fits well in different screen sizes. if something doesn't fit in one line, then it will *squeeze* it in the line below. */
+ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    color: var(--White);
+    font-family: var(--ff-alata);
+    font-weight: 400;
+}
+#hamburger-icon{
+    display: none;
+}
+li:hover{
+cursor: pointer;
+}
+ul li{
+    position: relative;
+    padding: 0.5rem 0;
+}
+ul li::after{
+    content:"";
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     height: 2px;
+     width: 0;
+     background-color: var(--White);
+     transform: translateX(-50%);
+     cursor: pointer;
+}
+ul li:hover::after{
+    width: 50%;
+}
