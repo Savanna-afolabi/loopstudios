@@ -102,6 +102,7 @@ main{
 #section-1{
     position: relative;
 }
+/* absolute - if you want to move a child with the parent, you need to give the parent relative, and the child absolute, so it will follow the parent. if the parent does not have relative, the child will stay at the viewpoint height (the top of the browser) */
 #text-div{
     position: absolute;
     left: 650px;
@@ -114,6 +115,19 @@ main{
     flex-direction: column;
     justify-content: end;
     word-wrap: break-word;
+   
+}
+#text-div h1{
+    font-family: var(--ff-josefin);
+    font-weight: 300;
+    font-size: 3rem;
+}
+#text-div p{
+    font-family: var(--ff-alata);
+    font-weight: 400;
+    color: rgb(165, 164, 164);
+    padding-top: 30px;
+    line-height: 2;
 }
 @media (max-width:768px) {
     .container{
@@ -137,4 +151,29 @@ main{
 #IMMERSIVE h1{
     width: 100%;
     font-size: 2.5rem;}
+
+
+/* main */
+#interactive-mobile{
+    display: block;
+    max-width: 100%;
+}
+#interactive-desktop{
+    display: none;
+}
+#text-div{
+    position: static;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+}
+#text-div h1{
+    font-size: 2.4rem;
+
+}
+#text-div p{
+padding-top: 20px;
+line-height: 1.6;
+}
+
 }
