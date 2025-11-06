@@ -102,7 +102,7 @@ main{
 #section-1{
     position: relative;
 }
-/* absolute - if you want to move a child with the parent, you need to give the parent relative, and the child absolute, so it will follow the parent. if the parent does not have relative, the child will stay at the viewpoint height (the top of the browser) */
+/* absolute - if you want to move a child with the parent, you need to give the parent relative, and the child absolute, so it will follow the parent. if the parent does not have relative, the child will stay at the viewport height (the top of the browser) */
 #text-div{
     position: absolute;
     left: 650px;
@@ -117,6 +117,19 @@ main{
     word-wrap: break-word;
    
 }
+#div-for-creations{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#div-for-creations h1{
+    font-family: var(--ff-josefin);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
 #text-div h1{
     font-family: var(--ff-josefin);
     font-weight: 300;
@@ -128,6 +141,49 @@ main{
     color: rgb(165, 164, 164);
     padding-top: 30px;
     line-height: 2;
+}
+#section-2{
+padding-top: 140px;
+}
+#div-for-creations button{
+    border: 1px solid var(--Black);
+    padding: 10px 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: var(--ff-alata);
+}
+#div-for-creations button:hover{
+    cursor: pointer;
+    background-color: var(--Black);
+    color: var(--White);
+}
+#creations-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.4rem;
+    padding: 60px 0;
+   
+
+}
+.creation-card{
+    height: 500px;
+    border: 2px solid red;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    font-family: var(--ff-alata);
+    color: var(--White);
+    font-weight: 400;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+}
+#deep-earth{
+    background-image: url(assets/desktop/Image20251008202448.jpg);
+}
+#night-arcade{
+    background-image: url(assets/desktop/Image20251008202500.jpg);
 }
 @media (max-width:768px) {
     .container{
@@ -175,5 +231,14 @@ main{
 padding-top: 20px;
 line-height: 1.6;
 }
-
+ 
+#desktop-btn{
+    display: none;
+}
+#section-2{
+    padding-top: 60px;
+}
+#div-for-creations{
+    justify-content: center;
+}
 }
