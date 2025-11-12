@@ -167,7 +167,6 @@ padding-top: 140px;
 }
 .creation-card{
     height: 500px;
-    border: 2px solid red;
     display: flex;
     align-items: flex-end;
     padding: 1rem;
@@ -183,7 +182,37 @@ padding-top: 140px;
     background-image: url(assets/desktop/Image20251008202448.jpg);
 }
 #night-arcade{
+    background-image: url(assets/desktop/Image20251008202527.jpg);
+}
+#soccer-team{
+    background-image: url(assets/desktop/Image20251008202518.jpg);
+}
+#the-grid{
+    background-image: url(assets/desktop/Image20251008202533.jpg);
+}
+#from-up-above-vr{
+    background-image: url(assets/desktop/Image20251008202547.jpg);
+}
+#pocket-borealis{
+    background-image: url(assets/desktop/Image20251008202510.jpg);
+}
+#curiousity{
     background-image: url(assets/desktop/Image20251008202500.jpg);
+}
+#fisheye{
+    background-image: url(assets/desktop/Image20251008202505.jpg);
+}
+.creation-card:hover{
+    opacity: 50%;
+    cursor: pointer;
+    color: var(--Black);
+    transform: scale(1.02);
+}
+.creation-card p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 30px;
+    max-width: 60%;
 }
 @media (max-width:768px) {
     .container{
@@ -240,5 +269,51 @@ line-height: 1.6;
 }
 #div-for-creations{
     justify-content: center;
+}
+/* grid */
+#creations-grid{
+  
+    grid-template-columns: 1fr;
+   
+}
+#deep-earth{
+    background-image: url(assets/mobile/Image20251008202313.jpg);
+   
+}
+#night-arcade{
+    background-image: url(assets/mobile/Image20251008202252.jpg);
+}
+#soccer-team{
+    background-image: url(assets/mobile/Image20251008202211.jpg);
+}
+#the-grid{
+    background-image: url(assets/mobile/Image20251008202237.jpg);
+}
+#from-up-above-vr{
+    background-image: url(assets/mobile/Image20251008202331.jpg);
+}
+#pocket-borealis{
+    background-image: url(assets/mobile/Image20251008202300.jpg);
+}
+#curiousity{
+    background-image: url(assets/mobile/Image20251008202242.jpg);
+}
+#fisheye{
+    background-image: url(assets/mobile/Image20251008202318.jpg);
+}
+.creation-card {
+    height: 120px;
+}
+.creation-card:hover{
+    transform: none;
+    color: var(--White);
+    cursor: none;
+    opacity: 100%;
+}
+.creation-card p{
+    max-width: 31%;
+    padding-left:0 ;
+    font-size: 1.3rem;
+   
 }
 }
