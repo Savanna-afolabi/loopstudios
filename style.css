@@ -232,7 +232,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 10px;
+    gap: 13px;
+    /* border: 1px solid red; */
 }
 #copyright{
     font-family: var(--ff-josefin);
